@@ -37,7 +37,7 @@ body {
     width: 100%;
     height: 300px;
     z-index:-1;
-    background-image: url('./images/background-pattern-mobile.svg');
+    background-image: url('background-pattern-mobile.svg');
     background-repeat:no-repeat;
     background-size:cover;
     background-position: top;
@@ -100,7 +100,7 @@ hr {
     body {
        
         .background {
-            background-image: url('./images/background-pattern-desktop.svg');
+            background-image: url('background-pattern-desktop.svg');
         }
 
         .container {
