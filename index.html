@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./main.css">
+    <title>
+        Faq Accordion
+    </title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="content-wrapper">
+        <header>
+            <img src="./images/icon-star.svg" alt="a purple star">
+            <h1 class="main-header">FAQs</h1>
+        </header>
+       
+        <section class="accordion">
+
+            <div class="accordion-item">
+            <div class="accordion-question">
+                <p>What is Frontend Mentor, and how will it help me?</p>
+                <img class="accordion-toggle-plus" src="./images/icon-plus.svg" alt="Expand">
+                <img class="accordion-toggle-minus" src="./images/icon-minus.svg" alt="Collapse">
+            </div>
+      
+                <p class="accordion-content ">
+                    Frontend Mentor offers realistic coding challanges to help 
+                    developers improve their coding skills with projects in HTML, CSS and JavaScript. 
+                    It's suitable for all levels and ideal for portfolio building.
+                </p>
+                <hr>
+            </div>
+
+            
+            <div class="accordion-item">
+                <div class="accordion-question">
+                    <p>Is Frontend Mentor free?</p>
+                    <img class="accordion-toggle-plus" src="./images/icon-plus.svg" alt="Expand">
+                    <img class="accordion-toggle-minus" src="./images/icon-minus.svg" alt="Collapse">
+                </div>
+                    <p class="accordion-content ">
+                        Frontend Mentor offers realistic coding challanges to help 
+                        developers improve their coding skills with projects in HTML, CSS and JavaScript. 
+                        It's suitable for all levels and ideal for portfolio building.
+                    </p>
+                    <hr>
+                </div>
+
+                
+            <div class="accordion-item">
+                <div class="accordion-question">
+                    <p >Can I use Frontend Mentor projects in my portfolio?</p>
+                    <img class="accordion-toggle-plus" src="./images/icon-plus.svg" alt="Expand">
+                    <img class="accordion-toggle-minus" src="./images/icon-minus.svg" alt="Collapse">
+                </div>
+                    <p class="accordion-content ">
+                        Frontend Mentor offers realistic coding challanges to help 
+                        developers improve their coding skills with projects in HTML, CSS and JavaScript. 
+                        It's suitable for all levels and ideal for portfolio building.
+                    </p>
+                    <hr>
+                </div>
+
+                
+            <div class="accordion-item">
+                <div class="accordion-question">
+                    <p >How can I get help if I'm stuck on a challenge?</p>
+                <img class="accordion-toggle-plus" src="./images/icon-plus.svg" alt="Expand">
+                <img class="accordion-toggle-minus" src="./images/icon-minus.svg" alt="Collapse">
+                </div>
+                    <p class="accordion-content ">
+                        Frontend Mentor offers realistic coding challanges to help 
+                        developers improve their coding skills with projects in HTML, CSS and JavaScript. 
+                        It's suitable for all levels and ideal for portfolio building.
+                    </p>
+
+                </div>
+          
+        </section>
+    </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-question');
+        const plusToggle = header.querySelector('.accordion-toggle-plus');
+        const minusToggle = header.querySelector('.accordion-toggle-minus');
+
+        header.addEventListener('click', function() {
+            item.classList.toggle('active');
+            plusToggle.style.display = item.classList.contains('active') ? 'none' : 'inline';
+            minusToggle.style.display = item.classList.contains('active') ? 'inline' : 'none';
+        });
+    });
+});
+
+
+    </script>
+</body>
+</html>
